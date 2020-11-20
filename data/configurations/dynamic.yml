@@ -5,7 +5,7 @@ http:
       middlewares:
         - "user-auth"
         - https-redirect
-      rule: "Host(`traefik.dehub.tech`)"
+      rule: "Host(`traefik.localhost`)"
       tls:
         passthrough: true
     jitsi:
@@ -15,7 +15,7 @@ http:
       middlewares:
         - https-redirect
       #rule: "Host(`traefik.dehub.tech`)"
-      rule: "Host(`lb.dehub.tech`)"
+      rule: "Host(`lb.localhost`)"
       tls:
         passthrough: true      
   middlewares:
